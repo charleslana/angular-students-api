@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Students</h1>
+    <hr>
+    <table class="table" aria-describedby="students">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <th scope="row">{{student.id}}</th>
+                <td>{{student.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
