@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>List of students</h1>
+    <hr>
+    <a routerLink="/students/create" class="btn btn-primary mb-2" role="button">New</a>
+    <table class="table" aria-describedby="students">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <th scope="row">{{student.id}}</th>
+                <td>{{student.name}}</td>
+                <td><a routerLink="/students/show/{{student.id}}" class="btn btn-success" role="button">View</a></td>
+                <td><a routerLink="/students/edit/{{student.id}}" class="btn btn-warning" role="button">Edit</a></td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StudentsComponent } from './students/students.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ListComponent } from './pages/list/list.component';
+import { ShowComponent } from './pages/show/show.component';
+import { EditComponent } from './pages/edit/edit.component';
+import { CreateComponent } from './pages/create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentsComponent
+    ListComponent,
+    ShowComponent,
+    EditComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
